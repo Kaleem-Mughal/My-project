@@ -4,11 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kaleem Group of Companies</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
   body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, #e0f2ff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+    background: #f6f9fc;
     color: #333;
   }
   a {
@@ -16,19 +17,18 @@
     color: inherit;
   }
   header {
-    background: linear-gradient(90deg, #004080, #0059b3);
+    background: #0a3d62;
     color: white;
-    padding: 80px 20px;
+    padding: 70px 20px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
   header h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    font-size: 2.5em;
+    margin-bottom: 8px;
+    font-weight: 600;
   }
   header p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     opacity: 0.9;
   }
   .content {
@@ -38,72 +38,70 @@
   }
   .content h2 {
     text-align: center;
-    font-size: 2.2em;
-    color: #004080;
-    margin-bottom: 50px;
+    font-size: 2em;
+    color: #0a3d62;
+    margin-bottom: 40px;
     position: relative;
   }
   .content h2::after {
     content: '';
     display: block;
-    width: 90px;
+    width: 70px;
     height: 3px;
-    background: #004080;
+    background: #0a3d62;
     margin: 10px auto 0;
     border-radius: 2px;
   }
   .businesses {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
   }
   .business-card {
     background: white;
-    border-radius: 14px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    min-height: 220px;
   }
   .business-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
   .business-card h3 {
-    font-size: 1.5em;
-    color: #003366;
-    margin-bottom: 12px;
+    font-size: 1.4em;
+    color: #0a3d62;
+    margin-bottom: 10px;
+    font-weight: 600;
   }
   .prime-agro {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #006699;
   }
   .coming-soon {
     color: #888;
     font-style: italic;
-    margin-top: 8px;
+    margin-top: 6px;
   }
   .button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 25px;
-    background: #007acc;
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: #0a3d62;
     color: white;
-    border-radius: 25px;
-    font-size: 0.95em;
+    border-radius: 20px;
+    font-size: 0.9em;
     transition: background 0.3s;
   }
   .button:hover {
-    background: #005c99;
+    background: #06416a;
   }
   footer {
-    background: #004080;
+    background: #0a3d62;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 25px 20px;
     margin-top: 60px;
     font-size: 0.95em;
   }
