@@ -8,14 +8,13 @@
   body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f8;
+    background: linear-gradient(to bottom right, #e0f2ff, #ffffff);
     color: #333;
   }
   a {
     text-decoration: none;
     color: inherit;
   }
-  /* Hero / Header */
   header {
     background: linear-gradient(90deg, #004080, #0059b3);
     color: white;
@@ -24,61 +23,68 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
   header h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
+    letter-spacing: 1px;
   }
   header p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     opacity: 0.9;
   }
-  /* Content */
   .content {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 50px auto;
+    padding: 0 20px 80px;
   }
   .content h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
     color: #004080;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
   }
   .content h2::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 90px;
     height: 3px;
     background: #004080;
     margin: 10px auto 0;
     border-radius: 2px;
   }
-  /* Business Cards Grid */
   .businesses {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
   }
   .business-card {
     background: white;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 14px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 220px;
   }
   .business-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   }
   .business-card h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #003366;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
-  .business-card p {
-    font-size: 0.95em;
-    color: #555;
+  .prime-agro {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #006699;
+  }
+  .coming-soon {
+    color: #888;
+    font-style: italic;
+    margin-top: 8px;
   }
   .button {
     display: inline-block;
@@ -93,14 +99,13 @@
   .button:hover {
     background: #005c99;
   }
-  /* Footer */
   footer {
     background: #004080;
     color: white;
     text-align: center;
-    padding: 25px 20px;
-    margin-top: 50px;
-    font-size: 0.9em;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 0.95em;
   }
   footer a {
     color: #cce6ff;
@@ -118,29 +123,25 @@
   <h2>Our Businesses</h2>
   <div class="businesses">
     <div class="business-card">
-      <h3>🌾 Prime AGRO Engineers</h3>
+      <h3 class="prime-agro">🌾 PRIME AGRO ENGINEERS</h3>
       <p>Advanced agricultural machinery & smart farming solutions.</p>
-      <a href="#" class="button">Visit</a>
+      <a href="agriculture/index.html" class="button">Visit</a>
     </div>
     <div class="business-card">
-      <h3>🏗 Business Name Coming Soon</h3>
-      <p>Modern real estate projects and sustainable construction.</p>
-      <a href="#" class="button">Visit</a>
+      <h3>🏗 Construction & Real Estate</h3>
+      <p class="coming-soon">Coming soon...</p>
     </div>
     <div class="business-card">
-      <h3>🚚 Business Name Coming Soon</h3>
-      <p>Efficient transport & supply chain management across regions.</p>
-      <a href="#" class="button">Visit</a>
+      <h3>🚚 Logistics & Transportation</h3>
+      <p class="coming-soon">Coming soon...</p>
     </div>
     <div class="business-card">
-      <h3>🛍 Business Name Coming Soon</h3>
-      <p>Retail stores & e-commerce platforms bringing value to customers.</p>
-      <a href="#" class="button">Visit</a>
+      <h3>🛍 Retail & E-commerce</h3>
+      <p class="coming-soon">Coming soon...</p>
     </div>
     <div class="business-card">
-      <h3>💡 Business Name Coming Soon</h3>
-      <p>Tech solutions, apps, and digital transformation services.</p>
-      <a href="#" class="button">Visit</a>
+      <h3>💡 IT & Digital Solutions</h3>
+      <p class="coming-soon">Coming soon...</p>
     </div>
   </div>
 </div>
@@ -152,3 +153,4 @@
 
 </body>
 </html>
+
